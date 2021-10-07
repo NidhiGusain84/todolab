@@ -1,0 +1,16 @@
+<div>
+<h2>TODO List</h2>
+<h4>A place to store your todos</h4>
+<ng-container *ngFor="let item of thetodo">
+<div>
+<button (click)=completeTask()>Complete</button>
+ {{item.task}}
+</div>
+</ng-container>
+<br />
+<h4>Add your to-do</h4>
+<input type="text" [(ngModel)]="newtask" />
+
+<button (click)=addTask()>Add</button>
+
+</div>
